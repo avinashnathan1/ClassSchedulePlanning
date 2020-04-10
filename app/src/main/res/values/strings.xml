@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Walkable</string>
+    <color name="black">#000000</color>
+    <string name="api_key">AIzaSyCHkBoIJ7X06EIkIiHaffgYY9673Z8k3M0</string>
+</resources>

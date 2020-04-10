@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/class1header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="29dp"
+        android:text="Class/Event 1:" />
+
+    <TextView
+        android:id="@+id/class2header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/class1header"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:text="Class/Event 2:" />
+
+    <EditText
+        android:id="@+id/className1"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/class1header"
+        android:layout_alignLeft="@+id/class1header"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="150dp"
+        android:hint="Enter class name."
+        android:text="" />
+
+    <EditText
+        android:id="@+id/className2"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:hint="Enter class name."
+        android:layout_alignTop="@+id/className1"
+        android:layout_alignLeft="@+id/class2header"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_alignEnd="@+id/className1"
+        android:layout_alignRight="@+id/className1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment2"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="300dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/className2"
+        android:layout_alignRight="@+id/className2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/locStorage1"
+        android:layout_width="132dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/place_autocomplete_fragment"
+        android:layout_alignStart="@+id/place_autocomplete_fragment"
+        android:layout_alignLeft="@+id/place_autocomplete_fragment"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-300dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/locStorage2"
+        android:layout_width="129dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/place_autocomplete_fragment"
+        android:layout_alignStart="@+id/place_autocomplete_fragment2"
+        android:layout_alignLeft="@+id/place_autocomplete_fragment2"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="-300dp"
+        android:text="" />
+
+
+</RelativeLayout>
